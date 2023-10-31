@@ -51,4 +51,8 @@ Answer
 ## Contributors
 [Nicholas Crump](https://github.com/Kataruse)
 
-[Eli Combs](https://github.com/ConeDome)
+[Elijah Combs](https://github.com/ConeDome)
+
+[Ethan Horton](https://github.com/hortonew27)
+
+[Zackary Jordan](https://github.com/ShadowWlkr)
