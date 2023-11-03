@@ -2,13 +2,12 @@
 
 public class Crate
 {
-
-	string _id { get; set; }
-	double _price { get; set; }
+	Random randPrice = new Random(50, 501);
+	Random randId = new Random(0, 1000000)
 
     public Crate(string id, double price)
 	{
-		_id = id;
-		_price = price;
+		id = randId;
+		price = randPrice;
 	}
 }
