@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F6IdEn6KUW8BpQB7SWGpq5zQ0h4HvbfXuurpLkYF4TEa4pz/uoZszWQH4W5JqngT5N+MovYvjpVEpZnZFV6LoA==",
+  "dgSpecHash": "KkzCq526oRnwX6Qk1Q56Y7EKfrrmz7E1Cb3i2YEpcCIs3pQXUn+BPQyZiCHB4xjlbWTPIZLKTyLiHpE0qC02hg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicka\\Downloads\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3-main\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\nicka\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.15\\microsoft.windowsdesktop.app.ref.6.0.15.nupkg.sha512",
-    "C:\\Users\\nicka\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.15\\microsoft.netcore.app.ref.6.0.15.nupkg.sha512",
-    "C:\\Users\\nicka\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.15\\microsoft.aspnetcore.app.ref.6.0.15.nupkg.sha512",
-    "C:\\Users\\nicka\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.15\\microsoft.netcore.app.host.win-x64.6.0.15.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\ewade\\source\\repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
