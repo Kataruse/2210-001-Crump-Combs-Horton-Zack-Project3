@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kim\\Source\\Repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj": {}
+    "C:\\Users\\Kim\\source\\repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kim\\Source\\Repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj": {
+    "C:\\Users\\Kim\\source\\repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kim\\Source\\Repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
+        "projectUniqueName": "C:\\Users\\Kim\\source\\repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
         "projectName": "FazbearEntertainements_Project3",
-        "projectPath": "C:\\Users\\Kim\\Source\\Repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
+        "projectPath": "C:\\Users\\Kim\\source\\repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
         "packagesPath": "C:\\Users\\Kim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kim\\Source\\Repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\obj\\",
+        "outputPath": "C:\\Users\\Kim\\source\\repos\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3\\FazbearEntertainements_Project3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
