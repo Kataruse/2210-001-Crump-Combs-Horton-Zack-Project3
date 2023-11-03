@@ -2,12 +2,13 @@
 
 public class Crate
 {
-	Random randPrice = new Random(50, 501);
-	Random randId = new Random(0, 1000000)
+	Random rand = new Random();
+	//Random randPrice = new rand(50, 501);
+	//Random randId = new Random(0, 1000000);
 
     public Crate(string id, double price)
 	{
-		id = randId;
-		price = randPrice;
+		id = rand.Next(0, 1000000).ToString();
+		price = Convert.ToDouble(rand.Next(50, 501));
 	}
 }
