@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Eli\\.nuget\\packages\\": {}
+    "C:\\Users\\nicka\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eli\\Desktop\\Programs\\Data Structures\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
+      "projectUniqueName": "C:\\Users\\nicka\\Downloads\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3-WarehouseEdge\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
       "projectName": "FazbearEntertainements_Project3",
-      "projectPath": "C:\\Users\\Eli\\Desktop\\Programs\\Data Structures\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
-      "packagesPath": "C:\\Users\\Eli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eli\\Desktop\\Programs\\Data Structures\\FazbearEntertainements_Project3\\obj\\",
+      "projectPath": "C:\\Users\\nicka\\Downloads\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3-WarehouseEdge\\FazbearEntertainements_Project3\\FazbearEntertainements_Project3.csproj",
+      "packagesPath": "C:\\Users\\nicka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nicka\\Downloads\\2210-001-CrumpNick-CombsEli-HortonEthan-ZackJordan-Project3-WarehouseEdge\\FazbearEntertainements_Project3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Eli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nicka\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -56,12 +56,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
