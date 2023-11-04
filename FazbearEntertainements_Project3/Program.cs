@@ -17,7 +17,8 @@ namespace FazbearEntertainements_Project3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Warehouse warehouse = new Warehouse();
+            warehouse.Run();
         }
     }
 }
