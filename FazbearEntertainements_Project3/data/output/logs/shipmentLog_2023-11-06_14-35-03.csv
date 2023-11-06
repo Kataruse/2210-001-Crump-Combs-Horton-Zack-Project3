@@ -1,0 +1,46 @@
+Time Increment,Dock #,Truck Driver's Name,Delivery Company,Crate ID,Crate Value,Dock Status
+120 Minutes,1,Stephen Hendrix,Conseillers en gestion et informatique,781685,414.47$,Truck Still Unloading
+150 Minutes,1,Stephen Hendrix,Conseillers en gestion et informatique,517886,56.13$,Truck Still Unloading
+180 Minutes,1,Stephen Hendrix,Conseillers en gestion et informatique,497158,213.99$,Truck Still Unloading
+210 Minutes,1,Stephen Hendrix,Conseillers en gestion et informatique,333326,483.48$,Truck Still Unloading
+240 Minutes,1,Stephen Hendrix,Conseillers en gestion et informatique,16471,80.69$,Truck Still Unloading
+270 Minutes,1,Stephen Hendrix,Conseillers en gestion et informatique,747903,307.93$,Dock Still Occupied
+300 Minutes,1,Joel Miller,Jakobs,132955,51.08$,Truck Still Unloading
+330 Minutes,1,Joel Miller,Jakobs,615934,485.78$,Truck Still Unloading
+360 Minutes,1,Joel Miller,Jakobs,5564,191.68$,Dock Still Occupied
+390 Minutes,1,Arthur Morgan,Xamarin,788348,162.88$,Dock is Empty
+420 Minutes,1,John Marston,Wesco,367016,282.15$,Truck Still Unloading
+450 Minutes,1,John Marston,Wesco,276340,392.61$,Dock Still Occupied
+480 Minutes,1,Arthur Morgan,Nintendo,880127,213.83$,Truck Still Unloading
+510 Minutes,1,Arthur Morgan,Nintendo,554013,276.54$,Truck Still Unloading
+540 Minutes,1,Arthur Morgan,Nintendo,933768,334.91$,Dock Still Occupied
+570 Minutes,1,Micheal,Open Systems Interconnection,881196,294.74$,Truck Still Unloading
+600 Minutes,1,Micheal,Open Systems Interconnection,604283,254.34$,Truck Still Unloading
+630 Minutes,1,Micheal,Open Systems Interconnection,979806,107.72$,Truck Still Unloading
+660 Minutes,1,Micheal,Open Systems Interconnection,910588,359.11$,Truck Still Unloading
+690 Minutes,1,Micheal,Open Systems Interconnection,640882,393.88$,Truck Still Unloading
+720 Minutes,1,Micheal,Open Systems Interconnection,132897,464.29$,Truck Still Unloading
+750 Minutes,1,Micheal,Open Systems Interconnection,346422,490.8$,Dock Still Occupied
+780 Minutes,1,Nicholas Trahan,Dahl,803468,156.44$,Truck Still Unloading
+810 Minutes,1,Nicholas Trahan,Dahl,404776,108.61$,Truck Still Unloading
+840 Minutes,1,Nicholas Trahan,Dahl,275412,498.96$,Truck Still Unloading
+870 Minutes,1,Nicholas Trahan,Dahl,958438,241.09$,Truck Still Unloading
+900 Minutes,1,Nicholas Trahan,Dahl,155544,283.94$,Truck Still Unloading
+930 Minutes,1,Nicholas Trahan,Dahl,443922,346.6$,Dock Still Occupied
+960 Minutes,1,Lady Dimitrescu,Umbrella,720972,225.58$,Truck Still Unloading
+990 Minutes,1,Lady Dimitrescu,Umbrella,300256,101.49$,Truck Still Unloading
+1020 Minutes,1,Lady Dimitrescu,Umbrella,7090,435.99$,Truck Still Unloading
+1050 Minutes,1,Lady Dimitrescu,Umbrella,536007,180.24$,Truck Still Unloading
+1080 Minutes,1,Lady Dimitrescu,Umbrella,62894,112.76$,Truck Still Unloading
+1110 Minutes,1,Lady Dimitrescu,Umbrella,52912,270.05$,Truck Still Unloading
+1140 Minutes,1,Lady Dimitrescu,Umbrella,91541,285.9$,Truck Still Unloading
+1170 Minutes,1,Lady Dimitrescu,Umbrella,95105,219.76$,Dock Still Occupied
+1200 Minutes,1,Ryan Oler,Salesforce,594214,113.48$,Truck Still Unloading
+1230 Minutes,1,Ryan Oler,Salesforce,906810,290.99$,Truck Still Unloading
+1260 Minutes,1,Ryan Oler,Salesforce,461052,234.53$,Truck Still Unloading
+1290 Minutes,1,Ryan Oler,Salesforce,775713,442.9$,Dock Still Occupied
+1320 Minutes,1,Carson Medley,Aperture Science,649539,350$,Dock Still Occupied
+1350 Minutes,1,Ada Wong,Oak Ridge National Laboratory,641108,71.52$,Truck Still Unloading
+1380 Minutes,1,Ada Wong,Oak Ridge National Laboratory,482596,213.7$,Dock Still Occupied
+1410 Minutes,1,Jill Valentine,Aperture Science,890016,180.54$,Truck Still Unloading
+1440 Minutes,1,Jill Valentine,Aperture Science,959062,487.04$,Truck Still Unloading

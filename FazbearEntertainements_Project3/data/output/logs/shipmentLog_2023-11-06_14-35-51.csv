@@ -1,0 +1,151 @@
+Time Increment,Dock #,Truck Driver's Name,Delivery Company,Crate ID,Crate Value,Dock Status
+60 Minutes,1,Link,Landgraab Industries,109244,497.7$,Truck Still Unloading
+90 Minutes,1,Link,Landgraab Industries,219772,255.91$,Truck Still Unloading
+120 Minutes,1,Link,Landgraab Industries,892375,74.81$,Truck Still Unloading
+150 Minutes,1,Link,Landgraab Industries,435425,349.44$,Truck Still Unloading
+180 Minutes,1,Link,Landgraab Industries,161480,58.94$,Truck Still Unloading
+210 Minutes,1,Link,Landgraab Industries,983113,132.18$,Truck Still Unloading
+210 Minutes,2,Donald Gotterbarn,Aperture Science,988928,139.47$,Truck Still Unloading
+240 Minutes,1,Link,Landgraab Industries,525393,463.76$,Dock is Empty
+240 Minutes,2,Donald Gotterbarn,Aperture Science,17256,88.12$,Truck Still Unloading
+270 Minutes,2,Donald Gotterbarn,Aperture Science,450266,409.75$,Truck Still Unloading
+270 Minutes,3,Ken Loveday,Conseillers en gestion et informatique,194261,73.15$,Truck Still Unloading
+300 Minutes,2,Donald Gotterbarn,Aperture Science,106215,101.66$,Dock is Empty
+300 Minutes,3,Ken Loveday,Conseillers en gestion et informatique,682318,254.92$,Truck Still Unloading
+330 Minutes,3,Ken Loveday,Conseillers en gestion et informatique,774810,134.68$,Truck Still Unloading
+360 Minutes,3,Ken Loveday,Conseillers en gestion et informatique,94693,195.89$,Truck Still Unloading
+360 Minutes,4,Ren Amamiya,Vladof,91525,295.86$,Truck Still Unloading
+390 Minutes,3,Ken Loveday,Conseillers en gestion et informatique,245404,288.81$,Truck Still Unloading
+390 Minutes,4,Ren Amamiya,Vladof,56025,464.75$,Truck Still Unloading
+390 Minutes,5,William Rochelle,AVEVA,224402,244.16$,Truck Still Unloading
+420 Minutes,3,Ken Loveday,Conseillers en gestion et informatique,452549,332.99$,Dock is Empty
+420 Minutes,4,Ren Amamiya,Vladof,756215,234.17$,Truck Still Unloading
+420 Minutes,5,William Rochelle,AVEVA,571502,394.34$,Truck Still Unloading
+420 Minutes,6,Franklin,Landgraab Industries,281062,430.56$,Truck Still Unloading
+450 Minutes,4,Ren Amamiya,Vladof,53014,308.42$,Dock is Empty
+450 Minutes,5,William Rochelle,AVEVA,738984,261.8$,Truck Still Unloading
+450 Minutes,6,Franklin,Landgraab Industries,741387,220.14$,Truck Still Unloading
+480 Minutes,5,William Rochelle,AVEVA,196115,324.81$,Truck Still Unloading
+480 Minutes,6,Franklin,Landgraab Industries,864108,278.55$,Dock is Empty
+510 Minutes,5,William Rochelle,AVEVA,729288,218.12$,Dock is Empty
+600 Minutes,1,Miss Lyn,Vladof,21341,439.22$,Truck Still Unloading
+630 Minutes,1,Miss Lyn,Vladof,562323,129.33$,Truck Still Unloading
+630 Minutes,2,Kratos,IBM,249518,119.5$,Truck Still Unloading
+660 Minutes,1,Miss Lyn,Vladof,870570,278.71$,Truck Still Unloading
+660 Minutes,2,Kratos,IBM,639625,350.82$,Truck Still Unloading
+660 Minutes,3,Shemmy,Vladof,126561,69.01$,Truck Still Unloading
+690 Minutes,1,Miss Lyn,Vladof,788529,408.33$,Truck Still Unloading
+690 Minutes,2,Kratos,IBM,567477,180.23$,Truck Still Unloading
+690 Minutes,3,Shemmy,Vladof,566281,454.32$,Truck Still Unloading
+690 Minutes,4,Lady Dimitrescu,Tediore,286272,66.24$,Truck Still Unloading
+720 Minutes,1,Miss Lyn,Vladof,143908,115.63$,Dock is Empty
+720 Minutes,2,Kratos,IBM,449369,228.26$,Dock is Empty
+720 Minutes,3,Shemmy,Vladof,264051,113.13$,Truck Still Unloading
+720 Minutes,4,Lady Dimitrescu,Tediore,416706,454.54$,Truck Still Unloading
+720 Minutes,5,Solid Snake,Tediore,514261,333.46$,Truck Still Unloading
+750 Minutes,3,Shemmy,Vladof,334805,470.59$,Truck Still Unloading
+750 Minutes,4,Lady Dimitrescu,Tediore,875554,413.71$,Truck Still Unloading
+750 Minutes,5,Solid Snake,Tediore,565406,220.93$,Truck Still Unloading
+750 Minutes,6,Trevor,LabConnect,893870,82.6$,Truck Still Unloading
+780 Minutes,3,Shemmy,Vladof,303267,491.5$,Truck Still Unloading
+780 Minutes,4,Lady Dimitrescu,Tediore,206322,288.2$,Truck Still Unloading
+780 Minutes,5,Solid Snake,Tediore,192278,334.7$,Truck Still Unloading
+780 Minutes,6,Trevor,LabConnect,64205,99.7$,Truck Still Unloading
+780 Minutes,7,Meaghan Heimbach,Black Mesa,11581,383.48$,Truck Still Unloading
+810 Minutes,3,Shemmy,Vladof,430957,432.36$,Dock is Empty
+810 Minutes,4,Lady Dimitrescu,Tediore,58339,148.8$,Dock is Empty
+810 Minutes,5,Solid Snake,Tediore,797260,164.75$,Truck Still Unloading
+810 Minutes,6,Trevor,LabConnect,251764,466.73$,Truck Still Unloading
+810 Minutes,7,Meaghan Heimbach,Black Mesa,507069,130.26$,Truck Still Unloading
+810 Minutes,8,Brittany Mitchell,Cisco,242080,306.98$,Truck Still Unloading
+840 Minutes,1,Ren Amamiya,Cisco,470351,456.23$,Truck Still Unloading
+840 Minutes,5,Solid Snake,Tediore,432403,251.94$,Dock is Empty
+840 Minutes,6,Trevor,LabConnect,720873,387.81$,Truck Still Unloading
+840 Minutes,7,Meaghan Heimbach,Black Mesa,488045,191.83$,Truck Still Unloading
+840 Minutes,8,Brittany Mitchell,Cisco,502347,260.57$,Truck Still Unloading
+870 Minutes,1,Ren Amamiya,Cisco,465745,434.07$,Truck Still Unloading
+870 Minutes,2,Arthur Morgan,Atlas,709140,161.21$,Truck Still Unloading
+870 Minutes,6,Trevor,LabConnect,746888,94.9$,Truck Still Unloading
+870 Minutes,7,Meaghan Heimbach,Black Mesa,163212,156.94$,Truck Still Unloading
+870 Minutes,8,Brittany Mitchell,Cisco,36311,481.21$,Truck Still Unloading
+900 Minutes,1,Ren Amamiya,Cisco,998722,180.68$,Dock is Empty
+900 Minutes,2,Arthur Morgan,Atlas,779466,196.4$,Truck Still Unloading
+900 Minutes,3,Shemmy,LabConnect,346123,483.32$,Truck Still Unloading
+900 Minutes,6,Trevor,LabConnect,960790,418.2$,Dock is Empty
+900 Minutes,7,Meaghan Heimbach,Black Mesa,764935,295.56$,Dock is Empty
+900 Minutes,8,Brittany Mitchell,Cisco,221573,356.35$,Truck Still Unloading
+930 Minutes,2,Arthur Morgan,Atlas,846288,255.2$,Truck Still Unloading
+930 Minutes,3,Shemmy,LabConnect,352935,119.75$,Dock is Empty
+930 Minutes,4,Miss Lyn,Perserbid,589664,51.44$,Truck Still Unloading
+930 Minutes,8,Brittany Mitchell,Cisco,123694,365.83$,Dock is Empty
+960 Minutes,2,Arthur Morgan,Atlas,504004,162.17$,Truck Still Unloading
+960 Minutes,4,Miss Lyn,Perserbid,6633,108.09$,Truck Still Unloading
+960 Minutes,5,Brian Bennett,Perserbid,557782,265.55$,Truck Still Unloading
+990 Minutes,2,Arthur Morgan,Atlas,486686,410.83$,Truck Still Unloading
+990 Minutes,4,Miss Lyn,Perserbid,490060,349.62$,Truck Still Unloading
+990 Minutes,5,Brian Bennett,Perserbid,328268,339.96$,Truck Still Unloading
+990 Minutes,6,Meaghan Heimbach,Oak Ridge National Laboratory,24406,254.9$,Truck Still Unloading
+1020 Minutes,2,Arthur Morgan,Atlas,478030,424$,Dock is Empty
+1020 Minutes,4,Miss Lyn,Perserbid,817292,279.67$,Truck Still Unloading
+1020 Minutes,5,Brian Bennett,Perserbid,288211,494.36$,Truck Still Unloading
+1020 Minutes,6,Meaghan Heimbach,Oak Ridge National Laboratory,169182,124.15$,Truck Still Unloading
+1020 Minutes,7,Mario,Vault Tec,816064,225.83$,Truck Still Unloading
+1050 Minutes,4,Miss Lyn,Perserbid,365097,377.58$,Dock is Empty
+1050 Minutes,5,Brian Bennett,Perserbid,775646,288.75$,Truck Still Unloading
+1050 Minutes,6,Meaghan Heimbach,Oak Ridge National Laboratory,494544,475.75$,Truck Still Unloading
+1050 Minutes,7,Mario,Vault Tec,36469,87.78$,Truck Still Unloading
+1050 Minutes,8,John Marston,AVEVA,933874,294.61$,Truck Still Unloading
+1080 Minutes,1,Ada Wong,Maliwan,836511,332.76$,Truck Still Unloading
+1080 Minutes,5,Brian Bennett,Perserbid,598571,274.05$,Dock is Empty
+1080 Minutes,6,Meaghan Heimbach,Oak Ridge National Laboratory,39062,173.77$,Dock is Empty
+1080 Minutes,7,Mario,Vault Tec,133036,127.93$,Dock is Empty
+1080 Minutes,8,John Marston,AVEVA,871714,218.28$,Dock is Empty
+1110 Minutes,1,Ada Wong,Maliwan,287208,399.03$,Truck Still Unloading
+1110 Minutes,2,Daniel Hedden,Hyperion,693521,174.79$,Truck Still Unloading
+1140 Minutes,1,Ada Wong,Maliwan,371401,400.86$,Truck Still Unloading
+1140 Minutes,2,Daniel Hedden,Hyperion,727857,464.51$,Truck Still Unloading
+1140 Minutes,3,Katie Wilson,Siemens,361043,159.96$,Truck Still Unloading
+1170 Minutes,1,Ada Wong,Maliwan,948204,260.95$,Dock is Empty
+1170 Minutes,2,Daniel Hedden,Hyperion,530395,432.74$,Truck Still Unloading
+1170 Minutes,3,Katie Wilson,Siemens,675100,388.84$,Truck Still Unloading
+1170 Minutes,4,Tera,ServiceNow,823424,169.54$,Truck Still Unloading
+1200 Minutes,2,Daniel Hedden,Hyperion,905869,341.75$,Truck Still Unloading
+1200 Minutes,3,Katie Wilson,Siemens,941066,275.32$,Truck Still Unloading
+1200 Minutes,4,Tera,ServiceNow,477119,393.93$,Truck Still Unloading
+1200 Minutes,5,Franklin,Landgraab Industries,617162,497.39$,Truck Still Unloading
+1230 Minutes,2,Daniel Hedden,Hyperion,97581,75.91$,Dock is Empty
+1230 Minutes,3,Katie Wilson,Siemens,399927,374.71$,Truck Still Unloading
+1230 Minutes,4,Tera,ServiceNow,929099,418.47$,Truck Still Unloading
+1230 Minutes,5,Franklin,Landgraab Industries,738318,267.77$,Truck Still Unloading
+1230 Minutes,6,Solid Snake,Sony,7675,449.45$,Truck Still Unloading
+1260 Minutes,3,Katie Wilson,Siemens,665919,80.83$,Truck Still Unloading
+1260 Minutes,4,Tera,ServiceNow,218558,388.42$,Truck Still Unloading
+1260 Minutes,5,Franklin,Landgraab Industries,970688,477.41$,Truck Still Unloading
+1260 Minutes,6,Solid Snake,Sony,37888,380.37$,Truck Still Unloading
+1260 Minutes,7,Brittany Mitchell,Nintendo,742641,173.74$,Truck Still Unloading
+1290 Minutes,3,Katie Wilson,Siemens,402151,58.87$,Truck Still Unloading
+1290 Minutes,4,Tera,ServiceNow,532519,312.24$,Dock is Empty
+1290 Minutes,5,Franklin,Landgraab Industries,405466,52.68$,Truck Still Unloading
+1290 Minutes,6,Solid Snake,Sony,916849,225.57$,Dock is Empty
+1290 Minutes,7,Brittany Mitchell,Nintendo,161853,393.42$,Dock is Empty
+1290 Minutes,8,Katie Wilson,Eridian,584944,200.02$,Truck Still Unloading
+1320 Minutes,3,Katie Wilson,Siemens,812718,141.78$,Truck Still Unloading
+1320 Minutes,5,Franklin,Landgraab Industries,303530,193.97$,Dock is Empty
+1320 Minutes,6,Scott Koterbay,Siemens,742090,179.49$,Truck Still Unloading
+1320 Minutes,8,Katie Wilson,Eridian,226071,71.88$,Truck Still Unloading
+1350 Minutes,3,Katie Wilson,Siemens,223828,406.86$,Truck Still Unloading
+1350 Minutes,6,Scott Koterbay,Siemens,154133,285.03$,Dock is Empty
+1350 Minutes,7,Ren Amamiya,FAZBEAR ENTERTAINMENT INC,542573,452.69$,Truck Still Unloading
+1350 Minutes,8,Katie Wilson,Eridian,711711,374.82$,Truck Still Unloading
+1380 Minutes,3,Katie Wilson,Siemens,167069,340.34$,Dock is Empty
+1380 Minutes,4,Lara Croft,Hyperion,368902,241.53$,Truck Still Unloading
+1380 Minutes,7,Ren Amamiya,FAZBEAR ENTERTAINMENT INC,386185,174.69$,Truck Still Unloading
+1380 Minutes,8,Katie Wilson,Eridian,824946,443.21$,Truck Still Unloading
+1410 Minutes,4,Lara Croft,Hyperion,91961,378.52$,Dock is Empty
+1410 Minutes,5,Link,Landgraab Industries,25745,318.39$,Truck Still Unloading
+1410 Minutes,7,Ren Amamiya,FAZBEAR ENTERTAINMENT INC,5133,398.3$,Truck Still Unloading
+1410 Minutes,8,Katie Wilson,Eridian,8314,268.29$,Truck Still Unloading
+1440 Minutes,5,Link,Landgraab Industries,393637,102.22$,Truck Still Unloading
+1440 Minutes,6,Elijah Combs,Tediore,981664,289.11$,Truck Still Unloading
+1440 Minutes,7,Ren Amamiya,FAZBEAR ENTERTAINMENT INC,636327,65.32$,Truck Still Unloading
+1440 Minutes,8,Katie Wilson,Eridian,702373,222.41$,Truck Still Unloading

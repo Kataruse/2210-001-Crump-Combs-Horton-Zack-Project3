@@ -1,0 +1,75 @@
+Time Increment,Dock #,Truck Driver's Name,Delivery Company,Crate ID,Crate Value,Dock Status
+120 Minutes,1,Kratos,Umbrella,81823,462.63$,Truck Still Unloading
+150 Minutes,1,Kratos,Umbrella,720612,358.97$,Truck Still Unloading
+180 Minutes,1,Kratos,Umbrella,677936,451.5$,Dock is Empty
+300 Minutes,1,Meaghan Heimbach,Synaptian,363146,106.25$,Truck Still Unloading
+330 Minutes,1,Meaghan Heimbach,Synaptian,347187,202.05$,Dock is Empty
+420 Minutes,1,Ken Loveday,Cisco,715154,263.18$,Truck Still Unloading
+450 Minutes,1,Ken Loveday,Cisco,103450,455.1$,Truck Still Unloading
+450 Minutes,2,Garfield Arbuckle,Siemens,863923,296.56$,Dock is Empty
+480 Minutes,1,Ken Loveday,Cisco,930025,80.42$,Dock is Empty
+480 Minutes,2,Cloud Strife,Eridian,844269,72.39$,Truck Still Unloading
+510 Minutes,1,Ken Loveday,Landgraab Industries,627328,373.5$,Truck Still Unloading
+510 Minutes,2,Cloud Strife,Eridian,255617,396.06$,Truck Still Unloading
+540 Minutes,1,Ken Loveday,Landgraab Industries,844848,317.31$,Truck Still Unloading
+540 Minutes,2,Cloud Strife,Eridian,818181,206.07$,Truck Still Unloading
+570 Minutes,1,Ken Loveday,Landgraab Industries,243811,398.39$,Truck Still Unloading
+570 Minutes,2,Cloud Strife,Eridian,413970,302.54$,Truck Still Unloading
+600 Minutes,1,Ken Loveday,Landgraab Industries,954705,222.59$,Truck Still Unloading
+600 Minutes,2,Cloud Strife,Eridian,580847,207.16$,Dock Still Occupied
+630 Minutes,1,Ken Loveday,Landgraab Industries,546674,411.87$,Truck Still Unloading
+630 Minutes,2,Lara Croft,Siemens,20605,81.76$,Truck Still Unloading
+660 Minutes,1,Ken Loveday,Landgraab Industries,38602,458.4$,Truck Still Unloading
+660 Minutes,2,Lara Croft,Siemens,519560,55.35$,Truck Still Unloading
+690 Minutes,1,Ken Loveday,Landgraab Industries,345383,228.3$,Truck Still Unloading
+690 Minutes,2,Lara Croft,Siemens,488750,218.51$,Truck Still Unloading
+720 Minutes,1,Ken Loveday,Landgraab Industries,781200,189.89$,Dock Still Occupied
+720 Minutes,2,Lara Croft,Siemens,840318,318.5$,Truck Still Unloading
+750 Minutes,1,Ryan Oler,LabConnect,530378,344.86$,Truck Still Unloading
+750 Minutes,2,Lara Croft,Siemens,850023,355.45$,Dock Still Occupied
+780 Minutes,1,Ryan Oler,LabConnect,544638,93.74$,Truck Still Unloading
+780 Minutes,2,Alvedronning,Conseillers en gestion et informatique,143409,290$,Truck Still Unloading
+810 Minutes,1,Ryan Oler,LabConnect,103307,179.92$,Truck Still Unloading
+810 Minutes,2,Alvedronning,Conseillers en gestion et informatique,794931,306.59$,Truck Still Unloading
+840 Minutes,1,Ryan Oler,LabConnect,934089,495.87$,Dock Still Occupied
+840 Minutes,2,Alvedronning,Conseillers en gestion et informatique,967584,117.63$,Truck Still Unloading
+870 Minutes,1,Master Chief,East Tennessee State University,856300,187$,Truck Still Unloading
+870 Minutes,2,Alvedronning,Conseillers en gestion et informatique,763284,59.63$,Dock Still Occupied
+900 Minutes,1,Master Chief,East Tennessee State University,114317,342.81$,Truck Still Unloading
+900 Minutes,2,Master Chief,Sony,66968,258$,Truck Still Unloading
+930 Minutes,1,Master Chief,East Tennessee State University,603971,86.56$,Truck Still Unloading
+930 Minutes,2,Master Chief,Sony,421313,238.92$,Truck Still Unloading
+960 Minutes,1,Master Chief,East Tennessee State University,958522,303.51$,Dock Still Occupied
+960 Minutes,2,Master Chief,Sony,842865,155.65$,Truck Still Unloading
+990 Minutes,1,Bucky,East Tennessee State University,86328,311.88$,Truck Still Unloading
+990 Minutes,2,Master Chief,Sony,859986,401.89$,Truck Still Unloading
+1020 Minutes,1,Bucky,East Tennessee State University,852358,186.35$,Dock Still Occupied
+1020 Minutes,2,Master Chief,Sony,498397,394.99$,Truck Still Unloading
+1050 Minutes,1,Kratos,Eridian,281075,439.79$,Truck Still Unloading
+1050 Minutes,2,Master Chief,Sony,105356,170.68$,Dock Still Occupied
+1080 Minutes,1,Kratos,Eridian,117507,380.49$,Truck Still Unloading
+1080 Minutes,2,Ren Amamiya,Supergiant Games,570728,120.77$,Truck Still Unloading
+1110 Minutes,1,Kratos,Eridian,818294,75.02$,Dock Still Occupied
+1110 Minutes,2,Ren Amamiya,Supergiant Games,215999,308.29$,Truck Still Unloading
+1140 Minutes,1,Bucky,Xamarin,347072,92.83$,Truck Still Unloading
+1140 Minutes,2,Ren Amamiya,Supergiant Games,42711,264.72$,Truck Still Unloading
+1170 Minutes,1,Bucky,Xamarin,409619,302.34$,Truck Still Unloading
+1170 Minutes,2,Ren Amamiya,Supergiant Games,521535,469.67$,Truck Still Unloading
+1200 Minutes,1,Bucky,Xamarin,969547,205.72$,Truck Still Unloading
+1200 Minutes,2,Ren Amamiya,Supergiant Games,742136,454.89$,Truck Still Unloading
+1230 Minutes,1,Bucky,Xamarin,570654,133.44$,Truck Still Unloading
+1230 Minutes,2,Ren Amamiya,Supergiant Games,610391,59.86$,Dock Still Occupied
+1260 Minutes,1,Bucky,Xamarin,48841,139.05$,Truck Still Unloading
+1260 Minutes,2,Jake Gillenwater,Black Mesa,744760,283.4$,Truck Still Unloading
+1290 Minutes,1,Bucky,Xamarin,495716,259.57$,Dock Still Occupied
+1290 Minutes,2,Jake Gillenwater,Black Mesa,202213,73.91$,Truck Still Unloading
+1320 Minutes,1,Leon Kennedy,Hyperion,520588,325.07$,Truck Still Unloading
+1320 Minutes,2,Jake Gillenwater,Black Mesa,618985,375.21$,Truck Still Unloading
+1350 Minutes,1,Leon Kennedy,Hyperion,33711,138.86$,Truck Still Unloading
+1350 Minutes,2,Jake Gillenwater,Black Mesa,167111,403.41$,Truck Still Unloading
+1380 Minutes,1,Leon Kennedy,Hyperion,610879,60.82$,Truck Still Unloading
+1380 Minutes,2,Jake Gillenwater,Black Mesa,825093,129.15$,Dock Still Occupied
+1410 Minutes,1,Leon Kennedy,Hyperion,297473,259.91$,Truck Still Unloading
+1410 Minutes,2,Ruby Young,Salesforce,74064,209.17$,Truck Still Unloading
+1440 Minutes,1,Leon Kennedy,Hyperion,69758,244.71$,Dock Still Occupied
+1440 Minutes,2,Ruby Young,Salesforce,957605,405.64$,Dock Still Occupied

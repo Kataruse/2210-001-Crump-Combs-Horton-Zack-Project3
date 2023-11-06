@@ -1,0 +1,142 @@
+Time Increment,Dock #,Truck Driver's Name,Delivery Company,Crate ID,Crate Value,Dock Status
+150 Minutes,1,Ren Amamiya,The AAM Group,670185,96.56$,Truck Still Unloading
+180 Minutes,1,Ren Amamiya,The AAM Group,56347,466.19$,Truck Still Unloading
+210 Minutes,1,Ren Amamiya,The AAM Group,753427,290.77$,Truck Still Unloading
+240 Minutes,1,Ren Amamiya,The AAM Group,952364,61.35$,Truck Still Unloading
+270 Minutes,1,Ren Amamiya,The AAM Group,304719,125.57$,Dock is Empty
+450 Minutes,1,Kratos,Tediore,801821,445.18$,Truck Still Unloading
+480 Minutes,1,Kratos,Tediore,836394,119.38$,Truck Still Unloading
+480 Minutes,2,Link,Cerberus,893506,280.88$,Truck Still Unloading
+510 Minutes,1,Kratos,Tediore,110179,402.86$,Truck Still Unloading
+510 Minutes,2,Link,Cerberus,418063,439.94$,Truck Still Unloading
+510 Minutes,3,Chad,Torgue,855997,384.54$,Truck Still Unloading
+540 Minutes,1,Kratos,Tediore,17267,97.16$,Truck Still Unloading
+540 Minutes,2,Link,Cerberus,842755,140.5$,Truck Still Unloading
+540 Minutes,3,Chad,Torgue,735294,402.04$,Truck Still Unloading
+540 Minutes,4,Link,Sony,339530,471.94$,Truck Still Unloading
+570 Minutes,1,Kratos,Tediore,899734,353.68$,Dock is Empty
+570 Minutes,2,Link,Cerberus,649984,241.2$,Truck Still Unloading
+570 Minutes,3,Chad,Torgue,854111,181.46$,Truck Still Unloading
+570 Minutes,4,Link,Sony,451063,127.83$,Truck Still Unloading
+570 Minutes,5,Ada Wong,Salesforce,232223,74.14$,Truck Still Unloading
+600 Minutes,1,Carson Medley,Maliwan,856094,418.32$,Truck Still Unloading
+600 Minutes,2,Link,Cerberus,869203,291.75$,Truck Still Unloading
+600 Minutes,3,Chad,Torgue,953252,481.85$,Truck Still Unloading
+600 Minutes,4,Link,Sony,679938,306.66$,Dock is Empty
+600 Minutes,5,Ada Wong,Salesforce,532025,86.25$,Truck Still Unloading
+630 Minutes,1,Carson Medley,Maliwan,166620,202.83$,Truck Still Unloading
+630 Minutes,2,Link,Cerberus,522398,193.06$,Truck Still Unloading
+630 Minutes,3,Chad,Torgue,526239,135.62$,Truck Still Unloading
+630 Minutes,4,Chad,Microsoft,359337,201.45$,Truck Still Unloading
+630 Minutes,5,Ada Wong,Salesforce,736368,62.27$,Truck Still Unloading
+660 Minutes,1,Carson Medley,Maliwan,989838,105.64$,Dock Still Occupied
+660 Minutes,2,Link,Cerberus,40567,419.5$,Truck Still Unloading
+660 Minutes,3,Chad,Torgue,651051,496.55$,Truck Still Unloading
+660 Minutes,4,Chad,Microsoft,556007,331.46$,Truck Still Unloading
+660 Minutes,5,Ada Wong,Salesforce,996172,54.34$,Dock is Empty
+690 Minutes,1,William Rochelle,Torgue,362347,188.86$,Truck Still Unloading
+690 Minutes,2,Link,Cerberus,148343,115.82$,Truck Still Unloading
+690 Minutes,3,Chad,Torgue,849500,476.51$,Dock is Empty
+690 Minutes,4,Chad,Microsoft,946624,453.89$,Dock is Empty
+690 Minutes,5,Garfield Arbuckle,Synaptian,23551,191.32$,Truck Still Unloading
+720 Minutes,1,William Rochelle,Torgue,488547,451.34$,Truck Still Unloading
+720 Minutes,2,Link,Cerberus,707856,248.85$,Dock is Empty
+720 Minutes,3,Mathew Desjardins,Eridian,577364,306.01$,Truck Still Unloading
+720 Minutes,5,Garfield Arbuckle,Synaptian,579558,346.36$,Truck Still Unloading
+750 Minutes,1,William Rochelle,Torgue,438150,154.79$,Dock is Empty
+750 Minutes,3,Mathew Desjardins,Eridian,486298,282.71$,Truck Still Unloading
+750 Minutes,4,Ruby Young,Maliwan,758268,153.98$,Truck Still Unloading
+750 Minutes,5,Garfield Arbuckle,Synaptian,362020,235.21$,Truck Still Unloading
+780 Minutes,1,Garfield Arbuckle,Hammertech,696447,407.91$,Truck Still Unloading
+780 Minutes,3,Mathew Desjardins,Eridian,345247,105.3$,Truck Still Unloading
+780 Minutes,4,Ruby Young,Maliwan,374248,457.05$,Truck Still Unloading
+780 Minutes,5,Garfield Arbuckle,Synaptian,863503,349.92$,Truck Still Unloading
+810 Minutes,1,Garfield Arbuckle,Hammertech,516410,439.32$,Truck Still Unloading
+810 Minutes,2,Shemmy,ServiceNow,599069,389.54$,Truck Still Unloading
+810 Minutes,3,Mathew Desjardins,Eridian,807434,366.34$,Dock is Empty
+810 Minutes,4,Ruby Young,Maliwan,209891,303.87$,Truck Still Unloading
+810 Minutes,5,Garfield Arbuckle,Synaptian,434520,309.3$,Dock is Empty
+840 Minutes,1,Garfield Arbuckle,Hammertech,783882,155.08$,Truck Still Unloading
+840 Minutes,2,Shemmy,ServiceNow,264947,449.15$,Truck Still Unloading
+840 Minutes,4,Ruby Young,Maliwan,219183,148.73$,Truck Still Unloading
+840 Minutes,5,Jake Gillenwater,Umbrella,259296,131.3$,Truck Still Unloading
+870 Minutes,1,Garfield Arbuckle,Hammertech,539535,322.86$,Dock is Empty
+870 Minutes,2,Shemmy,ServiceNow,757257,73.73$,Dock is Empty
+870 Minutes,3,Trevor,Synaptian,831125,267.94$,Dock is Empty
+870 Minutes,4,Ruby Young,Maliwan,153167,266.09$,Truck Still Unloading
+870 Minutes,5,Jake Gillenwater,Umbrella,91531,150.35$,Truck Still Unloading
+900 Minutes,1,Lady Dimitrescu,Landgraab Industries,410748,477.7$,Truck Still Unloading
+900 Minutes,4,Ruby Young,Maliwan,434685,465.73$,Truck Still Unloading
+900 Minutes,5,Jake Gillenwater,Umbrella,601363,107.09$,Truck Still Unloading
+930 Minutes,1,Lady Dimitrescu,Landgraab Industries,13596,79.16$,Dock is Empty
+930 Minutes,2,Kratos,Cerberus,479640,79.15$,Truck Still Unloading
+930 Minutes,4,Ruby Young,Maliwan,566309,337.8$,Truck Still Unloading
+930 Minutes,5,Jake Gillenwater,Umbrella,506333,290.15$,Truck Still Unloading
+960 Minutes,2,Kratos,Cerberus,41072,384.62$,Truck Still Unloading
+960 Minutes,3,Joel Miller,FAZBEAR ENTERTAINMENT INC,958319,499.03$,Truck Still Unloading
+960 Minutes,4,Ruby Young,Maliwan,45870,388.99$,Dock is Empty
+960 Minutes,5,Jake Gillenwater,Umbrella,616550,485.18$,Truck Still Unloading
+990 Minutes,2,Kratos,Cerberus,922357,115.9$,Truck Still Unloading
+990 Minutes,3,Joel Miller,FAZBEAR ENTERTAINMENT INC,425633,200$,Truck Still Unloading
+990 Minutes,4,Carson Medley,Salesforce,317320,438.6$,Truck Still Unloading
+990 Minutes,5,Jake Gillenwater,Umbrella,389980,247.9$,Dock is Empty
+1020 Minutes,2,Kratos,Cerberus,271911,96.08$,Truck Still Unloading
+1020 Minutes,3,Joel Miller,FAZBEAR ENTERTAINMENT INC,971126,217.55$,Truck Still Unloading
+1020 Minutes,4,Carson Medley,Salesforce,523901,87.3$,Truck Still Unloading
+1020 Minutes,5,Lady Dimitrescu,The AAM Group,369355,305.56$,Truck Still Unloading
+1050 Minutes,1,Christopher Keller,Oak Ridge National Laboratory,454536,76.28$,Truck Still Unloading
+1050 Minutes,2,Kratos,Cerberus,276620,293.07$,Dock is Empty
+1050 Minutes,3,Joel Miller,FAZBEAR ENTERTAINMENT INC,753664,175.73$,Truck Still Unloading
+1050 Minutes,4,Carson Medley,Salesforce,477794,345.44$,Truck Still Unloading
+1050 Minutes,5,Lady Dimitrescu,The AAM Group,161130,234.82$,Truck Still Unloading
+1080 Minutes,1,Christopher Keller,Oak Ridge National Laboratory,515736,296.11$,Truck Still Unloading
+1080 Minutes,2,Ryan Oler,Clayton Technology,166330,275.37$,Truck Still Unloading
+1080 Minutes,3,Joel Miller,FAZBEAR ENTERTAINMENT INC,163681,367.14$,Truck Still Unloading
+1080 Minutes,4,Carson Medley,Salesforce,539331,82.68$,Truck Still Unloading
+1080 Minutes,5,Lady Dimitrescu,The AAM Group,553955,369.89$,Truck Still Unloading
+1110 Minutes,1,Christopher Keller,Oak Ridge National Laboratory,797437,371.6$,Dock Still Occupied
+1110 Minutes,2,Ryan Oler,Clayton Technology,780638,277.67$,Truck Still Unloading
+1110 Minutes,3,Joel Miller,FAZBEAR ENTERTAINMENT INC,154245,307.07$,Dock is Empty
+1110 Minutes,4,Carson Medley,Salesforce,117958,463.05$,Truck Still Unloading
+1110 Minutes,5,Lady Dimitrescu,The AAM Group,911800,439.95$,Truck Still Unloading
+1140 Minutes,1,Meaghan Heimbach,Synaptian,636483,476.05$,Truck Still Unloading
+1140 Minutes,2,Ryan Oler,Clayton Technology,476288,325.84$,Truck Still Unloading
+1140 Minutes,3,Tera,Umbrella,203128,432.67$,Truck Still Unloading
+1140 Minutes,4,Carson Medley,Salesforce,838200,413.33$,Dock is Empty
+1140 Minutes,5,Lady Dimitrescu,The AAM Group,188062,334.93$,Dock is Empty
+1170 Minutes,1,Meaghan Heimbach,Synaptian,46017,203.14$,Truck Still Unloading
+1170 Minutes,2,Ryan Oler,Clayton Technology,779333,110.52$,Truck Still Unloading
+1170 Minutes,3,Tera,Umbrella,437453,361.32$,Truck Still Unloading
+1170 Minutes,4,Christopher Keller,Clayton Technology,379751,266.98$,Truck Still Unloading
+1200 Minutes,1,Meaghan Heimbach,Synaptian,766596,209.14$,Dock is Empty
+1200 Minutes,2,Ryan Oler,Clayton Technology,136431,395.41$,Dock is Empty
+1200 Minutes,3,Tera,Umbrella,71018,497.44$,Truck Still Unloading
+1200 Minutes,4,Christopher Keller,Clayton Technology,65136,101.61$,Dock is Empty
+1200 Minutes,5,William Rochelle,Salesforce,814666,292.63$,Truck Still Unloading
+1230 Minutes,3,Tera,Umbrella,43555,192.93$,Dock is Empty
+1230 Minutes,4,Ken Loveday,Abstergo,914308,244.36$,Truck Still Unloading
+1230 Minutes,5,William Rochelle,Salesforce,9805,453.95$,Dock is Empty
+1260 Minutes,4,Ken Loveday,Abstergo,983165,390.38$,Truck Still Unloading
+1260 Minutes,5,Lara Croft,Vladof,843334,488.06$,Dock is Empty
+1290 Minutes,4,Ken Loveday,Abstergo,432232,251.71$,Truck Still Unloading
+1290 Minutes,5,Daddy Noland,Salesforce,430851,172.86$,Truck Still Unloading
+1320 Minutes,1,Jake Gillenwater,Wesco,427160,177.63$,Dock is Empty
+1320 Minutes,4,Ken Loveday,Abstergo,768178,134.34$,Truck Still Unloading
+1320 Minutes,5,Daddy Noland,Salesforce,540656,194.72$,Truck Still Unloading
+1350 Minutes,1,Kratos,Siemens,318306,190.19$,Truck Still Unloading
+1350 Minutes,4,Ken Loveday,Abstergo,584256,258.88$,Truck Still Unloading
+1350 Minutes,5,Daddy Noland,Salesforce,713751,463.38$,Truck Still Unloading
+1380 Minutes,1,Kratos,Siemens,127656,434.37$,Truck Still Unloading
+1380 Minutes,2,Nicholas Trahan,Perserbid,651089,195.86$,Truck Still Unloading
+1380 Minutes,4,Ken Loveday,Abstergo,558072,294.27$,Truck Still Unloading
+1380 Minutes,5,Daddy Noland,Salesforce,155072,163.85$,Truck Still Unloading
+1410 Minutes,1,Kratos,Siemens,35997,411.89$,Dock is Empty
+1410 Minutes,2,Nicholas Trahan,Perserbid,626745,352.21$,Truck Still Unloading
+1410 Minutes,3,Solid Snake,Clayton Technology,998416,203.74$,Truck Still Unloading
+1410 Minutes,4,Ken Loveday,Abstergo,208212,173.09$,Truck Still Unloading
+1410 Minutes,5,Daddy Noland,Salesforce,864494,407.05$,Truck Still Unloading
+1440 Minutes,1,Nicholas Trahan,Hyperion,509867,323.13$,Truck Still Unloading
+1440 Minutes,2,Nicholas Trahan,Perserbid,889852,403.31$,Truck Still Unloading
+1440 Minutes,3,Solid Snake,Clayton Technology,499826,348.29$,Truck Still Unloading
+1440 Minutes,4,Ken Loveday,Abstergo,90155,252.35$,Truck Still Unloading
+1440 Minutes,5,Daddy Noland,Salesforce,960297,80.67$,Truck Still Unloading

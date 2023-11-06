@@ -57,11 +57,7 @@ namespace FazbearEntertainements_Project3
             double totalCratesUnloadedValue = 0.00;
             double averageCrateValue = 0.00;
             double averageTruckValue = 0.00;
-            //  For Each Dock
-            //The total amount of time that a dock was in use.
-            //The total amount of time that a dock was not in use.
-            //The average amount of time that a dock was in use.
-            //The total cost of operating each dock.
+            List<DockInfo> dockInfoList = new List<DockInfo>();
             //-----------------
 
             Random rand = new Random();
@@ -80,6 +76,8 @@ namespace FazbearEntertainements_Project3
                 }
                 
             }
+
+            WriteHeaders(dateTime, numDocks);
 
             List<int> deckIDList = new List<int>();
             bool deckIDCheck = true;
@@ -102,7 +100,9 @@ namespace FazbearEntertainements_Project3
                 }
                 deckIDList.Add(randomDeckID);
                 Dock dock = new Dock(randomDeckID.ToString());
+                DockInfo dockInfo = new DockInfo();
                 dockList.Add(dock);
+                dockInfoList.Add(dockInfo);
             }
 
             int arrivalFlip1 = 0;
@@ -169,10 +169,28 @@ namespace FazbearEntertainements_Project3
                 }
                 for (int t = 0; t < amountofTrucksArrived; t++)
                 {
+                    List<int> crateIDList = new List<int>();
+                    bool crateIDCheck = true;
+                    int randomcrateID = 0;
                     Truck truck = new Truck(randomName(), randomCompany());
                     for(int j = 0; j < rand.Next(1,16); j++)
                     {
-                        Crate crate = new Crate();
+                        crateIDCheck = true;
+                        while (crateIDCheck == true)
+                        {
+                            crateIDCheck = false;
+                            randomcrateID = rand.Next(0, 1000000);
+                            foreach (int item in deckIDList)
+                            {
+                                if (item == randomcrateID)
+                                {
+                                    crateIDCheck = true;
+                                }
+                            }
+                        }
+                        crateIDList.Add(randomcrateID);
+
+                        Crate crate = new Crate(randomcrateID);
                         truck.Load(crate);
                     }
                     Entrance.Enqueue(truck);
@@ -196,10 +214,33 @@ namespace FazbearEntertainements_Project3
                 {
                     if (dockList[d].Line.Count > 0)
                     {
-                        dockList[d].Line.Peek().Unload();
+                        string dockState = "";
+                        if (dockList[d].Line.Peek().Trailer.Count-1 > 0)
+                        {
+                            //A crate was unloaded, but the truck still has more crates to unload
+                            dockState = "Truck Still Unloading";
+                        }
+                        else if (dockList[d].Line.Peek().Trailer.Count-1 == 0 && dockList[d].Line.Count-1 > 0)
+                        {
+                            //A crate was unloaded, and the truck has no more crates to unload, and another truck is already in the Dock
+                            dockState = "Dock Still Occupied";
+                        }
+                        else
+                        {
+                            //A crate was unloaded, and the truck has no more crates to unload, but another truck is NOT already in the Dock
+                            dockState = "Dock is Empty";
+                        }
+                        WriteShipmentLog(dateTime, i, d+1, dockList[d].Line.Peek().Driver, dockList[d].Line.Peek().DeliveryCompany, dockList[d].Line.Peek().Trailer.Peek().Id, dockList[d].Line.Peek().Trailer.Peek().price, dockState);
+                        revenue = revenue + dockList[d].Line.Peek().Trailer.Peek().price;
+                        totalCratesUnloadedValue = totalCratesUnloadedValue + dockList[d].Line.Peek().Trailer.Peek().price;
+                        numCratesUnloaded = numCratesUnloaded + 1;
+                        dockInfoList[d].IncreaseTotalCost(dockList[d].Line.Peek().Trailer.Peek().price);
+                        dockInfoList[d].IncreaseUseTime();
+                        dockList[d].Line.Peek().Unload();                        
                         if (dockList[d].Line.Peek().Trailer.Count == 0)
                         {
                             dockList[d].SendOff();
+                            numTrucksProcessed = numTrucksProcessed + 1;
                         }
                     }
                 }
@@ -209,24 +250,35 @@ namespace FazbearEntertainements_Project3
                     if (dockList[d].Line.Count > 0)
                     {
                         revenue = revenue - 100.00;
+                        dockInfoList[d].decreaseTotalCost(100.00);
                     }
                 }
+
+                for (int d = 0; d < numDocks; d++)
+                {
+                    if (longestLine < dockList[d].Line.Count)
+                    {
+                        longestLine = dockList[d].Line.Count;
+                    }
+                }
+                for (int d = 0; d < numDocks; d++)
+                {
+                    dockInfoList[d].SetNotInUseTime(increments);
+                    dockInfoList[d].SetAvgTimeInUse(increments);
+                }
             }
-            Console.WriteLine(revenue);
+            averageCrateValue = Math.Round(totalCratesUnloadedValue / numCratesUnloaded,2);
+            averageTruckValue = Math.Round(totalCratesUnloadedValue / numTrucksProcessed,2);
+            
+            WriteReport(dateTime, numDocks, Math.Round(revenue,2), longestLine, numTrucksProcessed, numCratesUnloaded, Math.Round(totalCratesUnloadedValue,2), averageCrateValue, averageTruckValue, dockInfoList);
         }
-        public void WriteShipmentLog(string dateTime, int increment, string name, string company, string crateID, double cratePrice, string dockState)
+        public void WriteShipmentLog(string dateTime, int increment, int dockNum, string name, string company, string crateID, double cratePrice, string dockState)
         {
-            /*
-            A string indicating one of 3 scenarios:
-                - A crate was unloaded, but the truck still has more crates to unload
-                - A crate was unloaded, and the truck has no more crates to unload, and another truck is already in the Dock
-                - A crate was unloaded, and the truck has no more crates to unload, but another truck is NOT already in the Dock
-            */
             try
             {
-                string filepath = $@"..\..\..\data\output\shipmentLog" + dateTime + ".csv";
+                string filepath = $@"..\..\..\data\output\logs\shipmentLog_" + dateTime + ".csv";
                 StreamWriter rwr = new StreamWriter(filepath, true);
-                rwr.WriteLine($@"{increment},{name},{company},{crateID},{cratePrice},{dockState}");
+                rwr.WriteLine($@"{increment* 30} Minutes,{dockNum},{name},{company},{crateID},{cratePrice}$,{dockState}");
                 rwr.Close();
             }
             catch
@@ -236,13 +288,18 @@ namespace FazbearEntertainements_Project3
 
         }
 
-        public void WriteReport(string dateTime, int numDocks, double revenue, int longestLine, int numTrucksProcessed, int numCratesUnloaded, double totalCratesUnloadedValue, double averageCrateValue, double averageTruckValue)
+        public void WriteReport(string dateTime, int numDocks, double revenue, int longestLine, int numTrucksProcessed, int numCratesUnloaded, double totalCratesUnloadedValue, double averageCrateValue, double averageTruckValue,List<DockInfo> dockInfoList)
         {
             try
             {
-                string filepath = $@"..\..\..\data\output\shipmentReport" + dateTime + ".csv";
+                string filepath = $@"..\..\..\data\output\reports\shipmentReport_" + dateTime + ".csv";
                 StreamWriter rwr = new StreamWriter(filepath, true);
-                rwr.WriteLine($@"{numDocks},{revenue},{longestLine},{numTrucksProcessed},{numCratesUnloaded},{totalCratesUnloadedValue},{averageCrateValue},{averageTruckValue},,dockTimeUse,dockTimeNotUse,dockTimeUseAvg,dockCost");
+                string data = $@"{numDocks},{revenue}$,{longestLine},{numTrucksProcessed},{numCratesUnloaded},{totalCratesUnloadedValue}$,{averageCrateValue}$,{averageTruckValue}$";
+                for (int d = 0; d < numDocks; d++)
+                {
+                    data = data + $",{d+1},{dockInfoList[d].inUseTime * 30} Minutes,{dockInfoList[d].notInUseTime * 30} Minutes,{dockInfoList[d].avgTimeInUse}%,{Math.Round(dockInfoList[d].totalCost,2)}$";
+                }
+                rwr.WriteLine(data);
                 rwr.Close();
             }
             catch
@@ -250,6 +307,31 @@ namespace FazbearEntertainements_Project3
                 throw new FileLoadException();
             }
 
+        }
+
+        public void WriteHeaders(string dateTime, int numDocks)
+        {
+            try
+            {
+                string filepath = $@"..\..\..\data\output\logs\shipmentLog_" + dateTime + ".csv";
+                StreamWriter rwr = new StreamWriter(filepath, true);
+                rwr.WriteLine($@"Time Increment,Dock #,Truck Driver's Name,Delivery Company,Crate ID,Crate Value,Dock Status");
+                rwr.Close();
+
+                filepath = $@"..\..\..\data\output\reports\shipmentReport_" + dateTime + ".csv";
+                rwr = new StreamWriter(filepath, true);
+                string data = $@"# of Docks,Revenue,Longest Dock Line,# Trucks Processed,# Crates Unloaded,Total Value of Unloaded Crates,Average Value of Crate,Average Value of Truck";
+                for (int d = 0; d < numDocks; d++)
+                {
+                    data = data + $",Dock #,Time Dock Was In Use,Time Dock Was Not In Use,Percent of Time Dock Was In Use,Cost of Dock Operation";
+                }
+                rwr.WriteLine(data);
+                rwr.Close();
+            }
+            catch
+            {
+                throw new FileLoadException();
+            }
         }
 
         public string randomName()

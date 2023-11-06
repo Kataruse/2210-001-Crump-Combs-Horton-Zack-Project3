@@ -21,9 +21,9 @@ public class Crate
     public string Id { get; private set; }
     public double price { get; private set; }
 
-    public Crate()
+    public Crate(int _Id)
 	{
-		Id = rand.Next(0, 1000000).ToString();
-		price = Convert.ToDouble(rand.Next(50, 501));
+		Id = Convert.ToString(_Id);
+        price = Math.Round(rand.NextDouble() * (500 - 50) + 50,2);
 	}
 }

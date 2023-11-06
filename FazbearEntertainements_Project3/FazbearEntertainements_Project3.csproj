@@ -8,7 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="data\output\" />
+    <Folder Include="data\output\logs\" />
+    <Folder Include="data\output\reports\" />
   </ItemGroup>
 
 </Project>
