@@ -41,14 +41,30 @@ namespace FazbearEntertainements_Project3
 
         public void Run()
         {
+            string dateTime = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+
             //-----Options-----
             int increments = 48;
             int numOfTrucksCanArrive = 3;
             //-----------------
 
-            Random rand = new Random();
-
+            //--Report Values--
             int numDocks = 0;
+            double revenue = 0.00;
+            int longestLine = 0;
+            int numTrucksProcessed = 0;
+            int numCratesUnloaded = 0;
+            double totalCratesUnloadedValue = 0.00;
+            double averageCrateValue = 0.00;
+            double averageTruckValue = 0.00;
+            //  For Each Dock
+            //The total amount of time that a dock was in use.
+            //The total amount of time that a dock was not in use.
+            //The average amount of time that a dock was in use.
+            //The total cost of operating each dock.
+            //-----------------
+
+            Random rand = new Random();
 
             while (true)
             {
@@ -89,43 +105,144 @@ namespace FazbearEntertainements_Project3
                 dockList.Add(dock);
             }
 
-            int arrivalFlip = 0;
+            int arrivalFlip1 = 0;
+            int arrivalFlip2 = 0;
             int amountofTrucksArrived = 0;
+
+            if (numOfTrucksCanArrive < 1)
+            {
+                numOfTrucksCanArrive = 1;
+            }
+
+            int subNumOfTrucksCanArrive = Convert.ToInt32(Math.Floor(Convert.ToDecimal(numOfTrucksCanArrive / 2)));
+            if (subNumOfTrucksCanArrive < 1)
+            {
+                subNumOfTrucksCanArrive = 1;
+            }
+
+            int addNumOfTrucksCanArrive = Convert.ToInt32(Math.Ceiling(Convert.ToDecimal(numOfTrucksCanArrive / 2)));
+
             for (int i = 1; i <= increments; i++)
             {
-                arrivalFlip = rand.Next(0, 2);
-                if (arrivalFlip == 0)
+
+
+                if (i > 24 && i < 34)
                 {
-                    amountofTrucksArrived = rand.Next(1, numOfTrucksCanArrive + 1);
+                    //x2 more chance to have trucks
+                    arrivalFlip1 = rand.Next(0, 2);
+                    arrivalFlip2 = rand.Next(0, 2);
+                    if (arrivalFlip1 == 0 || arrivalFlip2 == 0)
+                    {
+                        amountofTrucksArrived = rand.Next(1, numOfTrucksCanArrive + addNumOfTrucksCanArrive);
+                    }
+                    else
+                    {
+                        amountofTrucksArrived = 0;
+                    }
+                }
+                else if (i < 12 || i > 44)
+                {
+                    //x2 less chance to have trucks
+                    arrivalFlip1 = rand.Next(0, 2);
+                    arrivalFlip2 = rand.Next(0, 2);
+                    if (arrivalFlip1 == 0 && arrivalFlip2 == 0)
+                    {
+                        amountofTrucksArrived = rand.Next(1, subNumOfTrucksCanArrive + 1);
+                    }
+                    else
+                    {
+                        amountofTrucksArrived = 0;
+                    }
+                }
+                else
+                {
+                    //normal chance to have trucks
+                    arrivalFlip1 = rand.Next(0, 2);
+                    if (arrivalFlip1 == 0)
+                    {
+                        amountofTrucksArrived = rand.Next(1, numOfTrucksCanArrive + 1);
+                    }
+                    else
+                    {
+                        amountofTrucksArrived = 0;
+                    }
                 }
                 for (int t = 0; t < amountofTrucksArrived; t++)
                 {
-                    Truck truck = new Truck(randomName(), "test");
-                    Console.WriteLine(truck.Driver);
+                    Truck truck = new Truck(randomName(), randomCompany());
+                    for(int j = 0; j < rand.Next(1,16); j++)
+                    {
+                        Crate crate = new Crate();
+                        truck.Load(crate);
+                    }
+                    Entrance.Enqueue(truck);
+                }
+
+                int shortestDockLengthIndex = 0;
+                for (int d = 1; d < numDocks; d++)
+                {
+                    if (dockList[d - 1].Line.Count > dockList[d].Line.Count)
+                    {
+                        shortestDockLengthIndex = d;
+                    }
+                }
+                if (Entrance.Count > 0)
+                {
+                    dockList[shortestDockLengthIndex].JoinLine(Entrance.Dequeue());
+                }
+                
+
+                for (int d = 0; d < numDocks; d++)
+                {
+                    if (dockList[d].Line.Count > 0)
+                    {
+                        dockList[d].Line.Peek().Unload();
+                        if (dockList[d].Line.Peek().Trailer.Count == 0)
+                        {
+                            dockList[d].SendOff();
+                        }
+                    }
+                }
+
+                for (int d = 0; d < numDocks; d++)
+                {
+                    if (dockList[d].Line.Count > 0)
+                    {
+                        revenue = revenue - 100.00;
+                    }
                 }
             }
-
+            Console.WriteLine(revenue);
+        }
+        public void WriteShipmentLog(string dateTime, int increment, string name, string company, string crateID, double cratePrice, string dockState)
+        {
             /*
-            -Log Includes-
-            The time increment that the crate was unloaded
-            The truck driver’s name
-            The delivery company’s name
-            The crate’s identification number
-            The crate’s value
             A string indicating one of 3 scenarios:
                 - A crate was unloaded, but the truck still has more crates to unload
                 - A crate was unloaded, and the truck has no more crates to unload, and another truck is already in the Dock
                 - A crate was unloaded, and the truck has no more crates to unload, but another truck is NOT already in the Dock
-            
-             */
+            */
+            try
+            {
+                string filepath = $@"..\..\..\data\output\shipmentLog" + dateTime + ".csv";
+                StreamWriter rwr = new StreamWriter(filepath, true);
+                rwr.WriteLine($@"{increment},{name},{company},{crateID},{cratePrice},{dockState}");
+                rwr.Close();
+            }
+            catch
+            {
+                throw new FileLoadException();
+            }
+
         }
-        public void WriteDataFile()
+
+        public void WriteReport(string dateTime, int numDocks, double revenue, int longestLine, int numTrucksProcessed, int numCratesUnloaded, double totalCratesUnloadedValue, double averageCrateValue, double averageTruckValue)
         {
             try
             {
-                string filepath = $@"..\..\..\data\output\shipmentLog" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".csv";
+                string filepath = $@"..\..\..\data\output\shipmentReport" + dateTime + ".csv";
                 StreamWriter rwr = new StreamWriter(filepath, true);
-                rwr.WriteLine($@"");
+                rwr.WriteLine($@"{numDocks},{revenue},{longestLine},{numTrucksProcessed},{numCratesUnloaded},{totalCratesUnloadedValue},{averageCrateValue},{averageTruckValue},,dockTimeUse,dockTimeNotUse,dockTimeUseAvg,dockCost");
                 rwr.Close();
             }
             catch
@@ -156,6 +273,29 @@ namespace FazbearEntertainements_Project3
             }
 
             return newName;
+        }
+
+        public string randomCompany()
+        {
+            Random random = new Random();
+            int randCompany = random.Next(0, Enum.GetNames(typeof(Companies)).Length);
+            int randType = random.Next(1, 44);
+
+            char[] nameArr = Convert.ToString((Companies)Enum.Parse(typeof(Companies), Convert.ToString(randCompany))).ToCharArray();
+            string newCompany = "";
+            foreach (char item in nameArr)
+            {
+                if (item != '_')
+                {
+                    newCompany += item;
+                }
+                else
+                {
+                    newCompany += " ";
+                }
+            }
+
+            return newCompany;
         }
     }
 }
