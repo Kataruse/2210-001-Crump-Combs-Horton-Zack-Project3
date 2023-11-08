@@ -6,7 +6,8 @@
 //         Zackary Jordan, jordanzd@etsu.edu
 // Course: CSCI-2210-001 - Data Structures
 // Assignment: Project 3
-// Description: 
+// Description: This is the truck class, which is used to carry crates and take
+//              them to the dock to be unloaded. 
 //              
 //
 //
@@ -25,6 +26,11 @@ namespace FazbearEntertainements_Project3
         public string DeliveryCompany { get; set; }
         public Stack<Crate> Trailer { get; set; }
 
+        /// <summary>
+        /// Creates an instance of the truck class.
+        /// </summary>
+        /// <param name="driver">Name of the driver</param>
+        /// <param name="deliveryCompany">Name of the delivery company</param>
         public Truck(string driver, string deliveryCompany)
         {
             Driver = driver;
@@ -44,7 +50,7 @@ namespace FazbearEntertainements_Project3
         /// <summary>
         /// Unloads a crate starting from the front of the truck.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The crate that was unloaded from the truck.</returns>
         public Crate Unload()
         {
             Crate crateToUnload = Trailer.Pop();

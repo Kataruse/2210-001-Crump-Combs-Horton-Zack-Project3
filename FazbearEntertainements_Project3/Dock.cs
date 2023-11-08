@@ -6,7 +6,8 @@
 //         Zackary Jordan, jordanzd@etsu.edu
 // Course: CSCI-2210-001 - Data Structures
 // Assignment: Project 3
-// Description: 
+// Description: This is the dock class, which is used to take in trucks, send
+//              off trucks, and make sales by unloading crates from the trucks.
 //              
 //
 //
