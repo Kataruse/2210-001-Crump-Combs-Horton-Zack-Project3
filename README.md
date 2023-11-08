@@ -43,11 +43,6 @@ Download the most recent version and extract to file name.
 ## How to use
 Double click the "**FazbearEntertainements_Project3**.sln" file to open up the project in Microsoft Visual Studio, then press the green arrow run button with the text "**FazbearEntertainements_Project3**" following it to run the program.
 
-## FAQ
-
-### Question?
-Answer
-
 ## Contributors
 [Nicholas Crump](https://github.com/Kataruse)
 
