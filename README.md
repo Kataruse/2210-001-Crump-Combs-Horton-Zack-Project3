@@ -41,7 +41,7 @@ Once the simulation is complete, it should generate a report with the following 
 Download the most recent version and extract to file name.
 
 ## How to use
-Double click the "**PlaceholderName**.sln" file to open up the project in Microsoft Visual Studio, then press the green arrow run button with the text "**PlaceholderName**" following it to run the program.
+Double click the "**FazbearEntertainements_Project3**.sln" file to open up the project in Microsoft Visual Studio, then press the green arrow run button with the text "**FazbearEntertainements_Project3**" following it to run the program.
 
 ## FAQ
 
