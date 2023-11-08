@@ -6,7 +6,7 @@
 //         Zackary Jordan, jordanzd@etsu.edu
 // Course: CSCI-2210-001 - Data Structures
 // Assignment: Project 3
-// Description: 
+// Description: This runs a simulation of a day in the warehouse.
 //              
 //
 //

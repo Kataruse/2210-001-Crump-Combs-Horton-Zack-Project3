@@ -6,7 +6,8 @@
 //         Zackary Jordan, jordanzd@etsu.edu
 // Course: CSCI-2210-001 - Data Structures
 // Assignment: Project 3
-// Description: 
+// Description: This is the warehouse class, which uses several docks to take in 
+//              and send out trucks, while also unloading crates to make sales. 
 //              
 //
 //
@@ -33,12 +34,18 @@ namespace FazbearEntertainements_Project3
         List<Dock> dockList { get; set; }
         public Queue<Truck> Entrance { get; set; }
 
+        /// <summary>
+        /// Creates an instance of the warehouse class.
+        /// </summary>
         public Warehouse() 
         {
             dockList = new List<Dock>();
             Entrance = new Queue<Truck>();
         }
 
+        /// <summary>
+        /// Runs a simulation of one day in the warehouse with a set number of docks determined by the user and gives the total revenue for the day.
+        /// </summary>
         public void Run()
         {
             string dateTime = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
@@ -272,6 +279,18 @@ namespace FazbearEntertainements_Project3
             
             WriteReport(dateTime, numDocks, Math.Round(revenue,2), longestLine, numTrucksProcessed, numCratesUnloaded, Math.Round(totalCratesUnloadedValue,2), averageCrateValue, averageTruckValue, dockInfoList);
         }
+
+        /// <summary>
+        /// Writes a log of an individual crate onto a CSV file, and also indicates if there are more crates to follow. 
+        /// </summary>
+        /// <param name="dateTime">Time of the shipment</param>
+        /// <param name="increment">How long the simulation runs.</param>
+        /// <param name="name">Name of the shipment</param>
+        /// <param name="company">The company that sent the shipment</param>
+        /// <param name="crateID">The ID number of the crate</param>
+        /// <param name="cratePrice">The price of the crate</param>
+        /// <param name="dockState">Indicates how many trucks and crates are left for the dock to unload</param>
+        /// <exception cref="FileLoadException">Exception thrown if the shipment log is not successfully written to a file</exception>
         public void WriteShipmentLog(string dateTime, int increment, int dockNum, string name, string company, string crateID, double cratePrice, string dockState)
         {
             try
@@ -287,6 +306,20 @@ namespace FazbearEntertainements_Project3
             }
 
         }
+        /// <summary>
+        /// Writes the report of the results of the day to a CSV file.
+        /// </summary>
+        /// <param name="dateTime">Date and time of the shipment</param>
+        /// <param name="numDocks">Number of docks in the simulation</param>
+        /// <param name="revenue">Total amount of revenue for one day</param>
+        /// <param name="longestLine">Number of trucks in the longest line</param>
+        /// <param name="numTrucksProcessed">Number of trucks processed for teh day</param>
+        /// <param name="numCratesUnloaded">Number of crates unloaded for the day</param>
+        /// <param name="totalCratesUnloadedValue">Total number of crates unloaded</param>
+        /// <param name="averageCrateValue">Average number of crates at each dock</param>
+        /// <param name="averageTruckValue">Average number of trucks at each dock</param>
+        /// <exception cref="FileLoadException">Exception thrown if the shipment log is not successfully written to a file</exception>
+        
 
         public void WriteReport(string dateTime, int numDocks, double revenue, int longestLine, int numTrucksProcessed, int numCratesUnloaded, double totalCratesUnloadedValue, double averageCrateValue, double averageTruckValue,List<DockInfo> dockInfoList)
         {
@@ -309,6 +342,10 @@ namespace FazbearEntertainements_Project3
 
         }
 
+        /// <summary>
+        /// Gets a random driver name from the enum of names from Names.cs
+        /// </summary>
+        /// <returns>Random driver name</returns>
         public void WriteHeaders(string dateTime, int numDocks)
         {
             try
@@ -333,7 +370,6 @@ namespace FazbearEntertainements_Project3
                 throw new FileLoadException();
             }
         }
-
         public string randomName()
         {
             Random random = new Random();
@@ -357,6 +393,10 @@ namespace FazbearEntertainements_Project3
             return newName;
         }
 
+        /// <summary>
+        /// Gets a random company from the enum of companies from Companies.cs
+        /// </summary>
+        /// <returns>Random company name</returns>
         public string randomCompany()
         {
             Random random = new Random();

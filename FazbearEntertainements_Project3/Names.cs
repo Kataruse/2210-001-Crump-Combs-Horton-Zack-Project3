@@ -6,13 +6,11 @@
 //         Zackary Jordan, jordanzd@etsu.edu
 // Course: CSCI-2210-001 - Data Structures
 // Assignment: Project 3
-// Description: 
+// Description: This is an enum of all possible names of the truck drivers.
 //              
 //
 //
 ///////////////////////////////////////////////////////////////////////////////
-
-//enum of all the possible driver names
 public enum Names
 {
     Alvedronning,
