@@ -131,8 +131,6 @@ namespace FazbearEntertainements_Project3
 
             for (int i = 1; i <= increments; i++)
             {
-
-
                 if (i > 24 && i < 34)
                 {
                     //x2 more chance to have trucks
@@ -178,26 +176,45 @@ namespace FazbearEntertainements_Project3
                 {
                     List<int> crateIDList = new List<int>();
                     bool crateIDCheck = true;
-                    int randomcrateID = 0;
-                    Truck truck = new Truck(randomName(), randomCompany());
+                    int randomCrateID = 0;
+                    int randomTruckID = rand.Next(0,100001);
+                    bool truckIDCheck = true;
+                    List<int> truckIDList = new List<int>();
+
+                    while (truckIDCheck == true)
+                    {
+                        truckIDCheck = false;
+                        randomTruckID = rand.Next(0, 1000000);
+                        foreach (int item in truckIDList)
+                        {
+                            if (item == randomTruckID)
+                            {
+                                truckIDCheck = true;
+                            }
+                        }
+                    }
+                    truckIDList.Add(randomTruckID);
+
+
+                    Truck truck = new Truck(randomName(), randomCompany(), randomTruckID);
                     for(int j = 0; j < rand.Next(1,16); j++)
                     {
                         crateIDCheck = true;
                         while (crateIDCheck == true)
                         {
                             crateIDCheck = false;
-                            randomcrateID = rand.Next(0, 1000000);
+                            randomCrateID = rand.Next(0, 1000000);
                             foreach (int item in deckIDList)
                             {
-                                if (item == randomcrateID)
+                                if (item == randomCrateID)
                                 {
                                     crateIDCheck = true;
                                 }
                             }
                         }
-                        crateIDList.Add(randomcrateID);
+                        crateIDList.Add(randomCrateID);
 
-                        Crate crate = new Crate(randomcrateID);
+                        Crate crate = new Crate(randomCrateID);
                         truck.Load(crate);
                     }
                     Entrance.Enqueue(truck);
@@ -215,7 +232,34 @@ namespace FazbearEntertainements_Project3
                 {
                     dockList[shortestDockLengthIndex].JoinLine(Entrance.Dequeue());
                 }
-                
+
+                //This is the method for printing out the visual representation
+                Console.Clear();
+                Console.Write("ENTRANCE: ");
+                foreach (Truck truck in Entrance)
+                {
+                    
+                    Console.Write($"Truck[{truck.TruckID}] ");
+                }
+                Console.WriteLine("\n");
+                for (int e = 0; e < numDocks; e++)
+                {
+                    int truckCount = 0;
+                    Console.Write($"Dock {e + 1}: ");
+                    foreach(Truck truck in dockList[e].Line)
+                    {
+                        Console.Write($"Truck[{truck.TruckID}] ");
+                        truckCount++;
+                    }
+                    Console.WriteLine("\n");
+                    Thread.Sleep(400);
+                }
+                Console.Write("UPADTED ENTRANCE: ");
+                foreach (Truck truck in Entrance)
+                {
+                    Console.Write($"Truck[{truck.TruckID}] ");
+                }
+                Thread.Sleep(1000);
 
                 for (int d = 0; d < numDocks; d++)
                 {

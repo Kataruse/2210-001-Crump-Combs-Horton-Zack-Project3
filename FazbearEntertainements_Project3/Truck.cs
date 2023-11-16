@@ -22,6 +22,8 @@ namespace FazbearEntertainements_Project3
 {
     internal class Truck
     {
+        Random rand = new Random();
+        public int TruckID { get; set; }
         public string Driver { get; set; }
         public string DeliveryCompany { get; set; }
         public Stack<Crate> Trailer { get; set; }
@@ -31,8 +33,10 @@ namespace FazbearEntertainements_Project3
         /// </summary>
         /// <param name="driver">Name of the driver</param>
         /// <param name="deliveryCompany">Name of the delivery company</param>
-        public Truck(string driver, string deliveryCompany)
+        /// <param name="truckID"># associated to the truck</param>
+        public Truck(string driver, string deliveryCompany, int truckID)
         {
+            TruckID = truckID;
             Driver = driver;
             DeliveryCompany = deliveryCompany;
             Trailer = new Stack<Crate>(15);
