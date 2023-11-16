@@ -11,6 +11,9 @@
 //
 //
 ///////////////////////////////////////////////////////////////////////////////
+/// <summary>
+/// a collection of company names
+/// </summary>
 public enum Companies
 {
     FAZBEAR_ENTERTAINMENT_INC,

@@ -235,6 +235,7 @@ namespace FazbearEntertainements_Project3
 
                 //This is the method for printing out the visual representation
                 Console.Clear();
+                Console.Write("ITERATION: " + i + "\n");
                 Console.Write("ENTRANCE: ");
                 foreach (Truck truck in Entrance)
                 {
